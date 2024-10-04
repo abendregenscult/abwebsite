@@ -1,0 +1,133 @@
+body {
+    
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    margin: 20px 10;
+}
+
+a {
+    color: white; /* Torna os links brancos */
+    text-decoration: none; /* Remove o sublinhado dos links, se quiser */
+}
+
+a:hover {
+    color: gray; /* Opcional: muda a cor dos links ao passar o mouse */
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start; /* Mantém os itens antigos à esquerda */
+    list-style: none;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+    position: relative; /* Necessário para os novos botões */
+    flex-wrap: nowrap;
+}
+
+ul.right-elements {
+    color: white;
+    display: flex;
+    justify-content: flex-end; /* Alinha os novos itens à direita */
+    list-style: none;
+    align-items: right;
+    padding: 5px;
+    gap: 20px;
+    position: absolute; /* Faz com que os novos botões sejam posicionados fora do fluxo normal */
+    top: 0; /* Alinha verticalmente com os itens antigos */
+    right: 0; /* Alinha à direita */
+    flex-wrap: nowrap;
+}
+
+ul.right-elements:hover {
+    color: gray; /* Opcional: muda a cor dos links ao passar o mouse */
+}
+
+
+p {
+    color: white; /* Torna o texto branco */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex;
+    font-size: medium;
+    top: 0;
+    left: 50%; /* Move o p para o centro */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: fixed;
+}
+
+p.intro {
+    color: white; /* Torna o texto branco */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex;
+    font-size: large;
+    left: 50%; /* Move o p para o centro */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+p.desc {
+    color: rgba(255, 255, 255, 0.721); /* Torna o texto branco */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex;
+    font-size: medium;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+    max-width: 800px;
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    flex-wrap: nowrap;
+    position: relative;
+    font-style: italic;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+p.videos {
+    color: white; /* Torna o texto branco */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex;
+    font-size: large;
+    left: 50%; /* Move o p para o centro */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+p.viddesc {
+    color: rgba(255, 255, 255, 0.721); /* Torna o texto branco */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex;
+    font-size: medium;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+    max-width: 800px;
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    flex-wrap: nowrap;
+    position: relative;
+    font-style: italic;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+img.serventiamode {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-self: center;
+    align-content:center;
+    padding: 3%;
+    left: 25%;
+    top: 45%;
+    opacity: 50%;
+}
+
